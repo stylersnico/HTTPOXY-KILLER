@@ -2,7 +2,7 @@ HTTPOXY-KILLER
 ==============
 
 ##License
-Script for fixing the HTTPOXY Vulnerability on Debian and RHEL systems (Apache and NGINX)
+Script for fixing the HTTPOXY Vulnerability on Debian, RHEL and FreeBSD systems (Apache and NGINX)
 
 Based on : https://www.howtoforge.com/tutorial/httpoxy-protect-your-server/
 
