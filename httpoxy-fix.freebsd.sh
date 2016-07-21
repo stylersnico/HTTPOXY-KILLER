@@ -20,7 +20,7 @@ fi
 if [ -f /usr/local/etc/apache24/httpd.conf ]; then
     echo "Apache2 Found, fixing the httpoxy vulnerability ..."
     echo "RequestHeader unset Proxy early" >> /usr/local/etc/apache24/httpd.conf
-    service httpd restart
+    service apache24 restart
     echo "Alright, the httpoxy vulnerability is fixed."
 
 else
