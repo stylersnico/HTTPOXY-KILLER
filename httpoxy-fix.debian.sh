@@ -5,6 +5,8 @@ if [[ "$EUID" -ne 0 ]]; then
   	exit 1
 fi
 
+clear
+
 echo "This script is made to work under Debian systems, Let's check your release now."
 
 if [ -f /etc/debian_version ]; then
