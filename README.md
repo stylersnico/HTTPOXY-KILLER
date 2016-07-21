@@ -49,7 +49,7 @@ With :
 - Apache and/or NGINX
 
 ##Designed for
-Debian/RHEL based systems
+Debian/RHEL/FreeBSD based systems
 
 ##Installation
 
