@@ -8,7 +8,7 @@ fi
 echo "This script is made to work under Debian systems, Let's check your release now."
 
 if [ -f /etc/debian_version ]; then
-    echo "Good Debian system detected, now, see if you use NGINX or Apache :
+    echo "Good Debian system detected, now, see if you use NGINX or Apache :"
 
 else
     echo "No compatible OS detected, exiting ..."
@@ -16,7 +16,7 @@ else
 fi
 
 if [ -f /etc/apache2/apache2.conf ]; then
-    echo "Apache2 Found, fixing the httpoxy vulnerability .... \"
+    echo "Apache2 Found, fixing the httpoxy vulnerability ..."
     a2enmod headers
     wget -q https://raw.githubusercontent.com/stylersnico/HTTPOXY-KILLER/master/etc/apache2/conf-available/httpoxy.conf
     mv httpoxy.conf /etc/apache2/conf-available/httpoxy.conf
@@ -28,7 +28,7 @@ else
 fi
 
 if [ -f /etc/nginx/nginx.conf ]; then
-    echo "NGINX Found, fixing the httpoxy vulnerability ... \"
+    echo "NGINX Found, fixing the httpoxy vulnerability ..."
     wget -q https://raw.githubusercontent.com/stylersnico/HTTPOXY-KILLER/master/etc/nginx/fastcgi_params
     cat fastcgi_params >> /etc/nginx/fastcgi_params
     service nginx restart
