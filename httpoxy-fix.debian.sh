@@ -1,7 +1,7 @@
 #!/bin/bash
 # Check root access
 if [[ "$EUID" -ne 0 ]]; then
-	echo -e "${CRED}Sorry, you need to run this as root${CEND}"
+	echo -e "Sorry, you need to run this as root"
   	exit 1
 fi
 
