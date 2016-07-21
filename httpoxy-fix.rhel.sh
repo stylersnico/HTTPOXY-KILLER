@@ -7,7 +7,7 @@ fi
 
 clear
 
-echo "This script is made to work under Debian systems, Let's check your release now."
+echo "This script is made to work under RHEL systems, Let's check your release now."
 
 if [ -f /etc/redhat-release ]; then
     echo "Good RHEL system detected, now, see if you use NGINX or Apache :"
