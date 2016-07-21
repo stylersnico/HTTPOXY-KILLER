@@ -28,7 +28,8 @@ fi
 
 if [ -f /etc/nginx/nginx.conf ]; then
     echo "NGINX Found, fixing the httpoxy vulnerability ... \"
-    echo 'fastcgi_param HTTP_PROXY "";' >> /etc/nginx/fastcgi_params
+    wget -q https://raw.githubusercontent.com/stylersnico/HTTPOXY-KILLER/master/etc/nginx/fastcgi_params
+    cat fastcgi_params >> /etc/nginx/fastcgi_params
     service nginx restart
     echo "Alright, the httpoxy vulnerability is fixed."
 
